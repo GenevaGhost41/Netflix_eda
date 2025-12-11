@@ -17,8 +17,8 @@ st.markdown("Mini-Projet 2 – 8PRO408 · Application Streamlit")
 # ================================
 @st.cache_data
 def load_data():
-    # Adapter le chemin selon l'endroit d'où tu lances Streamlit
-    base_dir = os.path.dirname(os.path.dirname(__file__))  # dossier racine du projet
+    
+    base_dir = os.path.dirname(os.path.dirname(__file__))  
     data_path = os.path.join(base_dir, "data", "netflix_titles.csv")
     df = pd.read_csv(data_path)
 
